@@ -1,4 +1,4 @@
-English | [简体中文](./README.zh-CN.md)
+[English](./README.md) | 简体中文
 
 # react-native-textarea
 
@@ -8,26 +8,26 @@ English | [简体中文](./README.zh-CN.md)
 
 React Native textarea component
 
-## Example
+## 运行效果
 
 ![](./docs/ios.png)
 ![](./docs/android.jpg)
 
-## Installation
+## 安装和使用
 
-1. Install package via npm:
+1. 使用`npm`安装:
 
 ```bash
 $ npm install --save react-native-textarea
 ```
 
-2. Include the library in your code:
+2. 导入组件:
 
 ```js
 import Textarea from 'react-native-textarea';
 ```
 
-3. Use the component:
+3. 使用组件:
 
 ```js
 ...
@@ -70,9 +70,9 @@ const styles = StyleSheet.create({
 
 ### Textarea
 
-Properties | Descrition | Type | Default
+属性 | 说明 | 类型 | 默认值
 -----------|------------|------|--------
-| maxLength  |  limits the maximum number of characters that can be entered  | number   | `0` |
-| containerStyle |  custom style  | Object  | - |
+| maxLength  |  最大长度  | number   | `0` |
+| containerStyle |  组件样式  | Object  | - |
 
-> More available `Textarea` API can be found at [react-native TextInput](http://facebook.github.io/react-native/docs/textinput.html)
+> 更多 `Textarea` 属性请参考 [react-native TextInput](http://facebook.github.io/react-native/docs/textinput.html)

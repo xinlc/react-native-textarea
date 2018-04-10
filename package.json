@@ -1,22 +1,55 @@
 {
-  "name": "AwesomeProject",
+  "name": "react-native-textarea",
   "version": "0.0.1",
-  "private": true,
+  "description": "React Native textarea component",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "start": "npm run ios",
+    "ios": "cd examples/Basic && npm install && npm run ios",
+    "android": "cd examples/Basic && npm install && npm run android",
+    "lint": "eslint . --cache",
+    "lint-fix": "eslint . --fix --cache",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ci": "npm publish"
+  },
+  "repository": {
+    "url": "git@github.com:xinlc/react-native-textarea.git",
+    "type": "git"
+  },
+  "keywords": [
+    "textarea",
+    "react-native-textarea",
+    "react-native",
+    "react-component"
+  ],
+  "author": "Leo Xin <xinlichao2016@gmail.com> (https://github.com/xinlc)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xinlc/react-native-textarea/issues"
+  },
+  "homepage": "https://github.com/xinlc/react-native-textarea",
+  "files": [
+    "src"
+  ],
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
   },
   "dependencies": {
-    "react": "^16.3.0-alpha.1",
-    "react-native": "0.54.2"
+    "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "babel-jest": "23.0.0-alpha.0",
-    "babel-preset-react-native": "4.0.0",
-    "jest": "22.4.2",
-    "react-test-renderer": "^16.3.0-alpha.1"
-  },
-  "jest": {
-    "preset": "react-native"
+    "babel-eslint": "^7.2.3",
+    "babel-preset-react-native": "^4.0.0",
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.6.0",
+    "flow": "^0.2.3",
+    "flow-bin": "^0.49.1",
+    "flow-typed": "^2.1.2",
+    "react": "^16.3.0-alpha.1",
+    "react-native": "0.54.2"
   }
 }

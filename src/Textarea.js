@@ -4,17 +4,17 @@
  * @flow
  */
 import React, { PureComponent } from 'react';
-import { 
+import {
   StyleSheet,
   View,
-  Text, 
+  Text,
   TextInput,
 } from 'react-native';
 
 type Props = {
-  containerStyle: View.propTypes.style,
-  maxLength: number,
-  onChangeText: (text: string) => void,
+  containerStyle?: View.propTypes.style,
+  maxLength?: number,
+  onChangeText?: (text: string) => void,
 };
 
 type State = {
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     height: 170,
   },
   count: {
-    position: 'absolute', 
+    position: 'absolute',
     bottom: 8,
     right: 2,
     fontSize: 14,

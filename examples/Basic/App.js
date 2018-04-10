@@ -9,7 +9,7 @@ import {
   Text,
   View
 } from 'react-native';
-import Textarea from './Textarea';
+import Textarea from 'react-native-textarea';
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -24,16 +24,16 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-          <Textarea
-            containerStyle={styles.textareaContainer}
-            style={styles.textarea}
-            onChangeText={this.onChange}
-            defaultValue={this.state.text}
-            maxLength={120}
-            placeholder={'好玩有趣的，大家同乐，伤感忧闷的，大家同哭。。。'}
-            placeholderTextColor={'#c7c7c7'}
-            underlineColorAndroid={'transparent'}
-          />
+        <Textarea
+          containerStyle={styles.textareaContainer}
+          style={styles.textarea}
+          onChangeText={this.onChange}
+          defaultValue={this.state.text}
+          maxLength={120}
+          placeholder={'好玩有趣的，大家同乐，伤感忧闷的，大家同哭。。。'}
+          placeholderTextColor={'#c7c7c7'}
+          underlineColorAndroid={'transparent'}
+        />
       </View>
     );
   }
