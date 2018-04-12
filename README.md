@@ -3,7 +3,7 @@ English | [简体中文](./README.zh-CN.md)
 # react-native-textarea
 
 [![npm package](https://img.shields.io/npm/v/react-native-textarea.svg?style=flat-square)](https://www.npmjs.org/package/react-native-textarea)
-[![npm downloads](http://img.shields.io/npm/dm/react-native-textarea?style=flat-square)](https://npmjs.org/package/react-native-textarea)
+[![npm downloads](https://img.shields.io/npm/dt/react-native-textarea.svg)](https://www.npmjs.com/package/react-native-textarea)
 [![build](https://img.shields.io/travis/xinlc/react-native-textarea.svg?style=flat-square)](https://travis-ci.org/xinlc/react-native-textarea)
 
 React Native textarea component
