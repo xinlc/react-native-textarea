@@ -9,10 +9,14 @@ import {
   View,
   Text,
   TextInput,
+  ViewPropTypes,
 } from 'react-native';
 
+//Fallback when RN version is < 0.44
+const viewPropTypes = ViewPropTypes || View.propTypes;
+
 type Props = {
-  containerStyle?: View.propTypes.style,
+  containerStyle?: viewPropTypes.style,
   maxLength?: number,
   onChangeText?: (text: string) => void,
 };
