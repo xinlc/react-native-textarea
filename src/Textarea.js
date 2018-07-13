@@ -18,7 +18,6 @@ const viewPropTypes = ViewPropTypes || View.propTypes;
 type Props = {
   containerStyle?: viewPropTypes.style,
   maxLength?: number,
-  enforceMax: bool,
   onChangeText?: (text: string) => void,
 };
 
@@ -29,7 +28,6 @@ type State = {
 export default class Textarea extends PureComponent<Props, State> {
   static defaultProps = {
     maxLength: 0,
-    enforceMax: false,
   }
 
   constructor(props) {
@@ -62,12 +60,9 @@ export default class Textarea extends PureComponent<Props, State> {
 
   render() {
     const { containerStyle, maxLength, ...rest } = this.props;
-    
-    if(this.props.enforceMax === true)
-    {
+    if (!!maxLength) {
       rest.maxLength = maxLength;
     }
-    
     return (
       <View style={[styles.container, containerStyle]}>
         <TextInput multiline {...rest} onChangeText={this._onChangeText} />
