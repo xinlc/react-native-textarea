@@ -1,6 +1,6 @@
 {
   "name": "react-native-textarea",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React Native textarea component",
   "main": "src/index.js",
   "scripts": {
