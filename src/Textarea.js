@@ -65,7 +65,7 @@ export default class Textarea extends PureComponent<Props, State> {
     }
     return (
       <View style={[styles.container, containerStyle]}>
-        <TextInput multiline {...rest} onChangeText={this._onChangeText} />
+        <TextInput multiline {...rest} onChangeText={this._onChangeText} ref="textarea"/>
         {this._renderCount()}
       </View>
     );
