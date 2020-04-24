@@ -33,7 +33,7 @@ export default class Textarea extends PureComponent<Props, State> {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0,
+      count: +(!!props.defaultValue && props.defaultValue.length),
     };
   }
 
