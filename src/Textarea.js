@@ -18,6 +18,7 @@ const viewPropTypes = ViewPropTypes || View.propTypes;
 type Props = {
   containerStyle?: viewPropTypes.style,
   maxLength?: number,
+  mustShowCount?: bool,
   onChangeText?: (text: string) => void,
 };
 
@@ -28,6 +29,7 @@ type State = {
 export default class Textarea extends PureComponent<Props, State> {
   static defaultProps = {
     maxLength: 0,
+    mustShowCount: true,
   }
 
   constructor(props) {
@@ -49,7 +51,7 @@ export default class Textarea extends PureComponent<Props, State> {
     const { maxLength, } = this.props;
     const { count, } = this.state;
 
-    if (!maxLength) return null;
+    if (!maxLength || !mustShowCount) return null;
 
     return (
       <Text style={styles.count}>
