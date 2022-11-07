@@ -1,5 +1,9 @@
 English | [简体中文](./README.zh-CN.md)
 
+## Note
+
+This is not the original Package it ia a fork to solve the viewPropTypes Issues that started after react-native 0.69.7 release
+
 # react-native-textarea
 
 [![npm package](https://img.shields.io/npm/v/react-native-textarea.svg?style=flat-square)](https://www.npmjs.org/package/react-native-textarea)
